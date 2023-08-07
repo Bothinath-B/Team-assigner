@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Team Assigner</title>
 </head>
 <body>
-    <p class="txt">Team Assigner</p>
     <div class="container">
-            <label for="from" class="txt2">Total Members:</label>
-            <input type="number" id="total" class="total" required>
-            <label for="from" class="txt3">Members Per Team:</label>
-            <input type="number" id="mpt" class="mpt">
-            <button type="submit" class="btn" id="btn">Assign</button>
-    </div>
-    <div class="res-container">
-        <p class="txt4">Result:</p>
-        <div class="output" id="output">
-
+        <h1 class="title">Team Assigner</h1>
+        <div class="input-container">
+            <label for="total">Total Members:</label>
+            <input type="number" id="total" class="input-field" required>
+            <label for="mpt">Members Per Team:</label>
+            <input type="number" id="mpt" class="input-field">
+            <button type="button" class="assign-btn" id="btn">Assign Teams</button>
+        </div>
+        <div class="output-container">
+            <h2 class="result-title">Result:&nbsp;</h2>
+            <button type="button" style="visibility: hidden;" class="reset-btn" id="resetButton">Reset</button>
+            <div class="team-output" id="output">
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

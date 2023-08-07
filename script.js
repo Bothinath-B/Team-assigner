@@ -1,4 +1,5 @@
 const bt=document.getElementById('btn');
+let res=document.getElementById('resetButton');
         bt.addEventListener("click",function(){
                 let t=document.getElementById('total').value;
                 let m=document.getElementById('mpt').value;
@@ -7,7 +8,8 @@ const bt=document.getElementById('btn');
                 let team=t/m;
                 let array=[];
                 let store=[];
-                array[0]=Math.floor(Math.random()*t)+1;
+                
+                array[0]=Math.floor(Math.random( )*t)+1;
                 let at=t-1;
 
                 //Random and unique number in array
@@ -48,4 +50,16 @@ const bt=document.getElementById('btn');
                         store.pop();
                     }
                 }
+
+                res.style.visibility="visible";
             })
+
+            const resetButton = document.getElementById('resetButton');
+            let total=document.getElementById('total').value;
+            let mem=document.getElementById('mpt').value;
+            resetButton.addEventListener('click', () => {
+                document.getElementById('output').innerHTML = '';
+                total.value='';
+                mem.value='';
+                res.style.visibility="hidden";
+            });
