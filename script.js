@@ -59,6 +59,8 @@ let res=document.getElementById('resetButton');
             let mem=document.getElementById('mpt').value;
             resetButton.addEventListener('click', () => {
                 document.getElementById('output').innerHTML = '';
+                    let t=document.getElementById('total').value=null;
+                let m=document.getElementById('mpt').value=null;
                 total.value='';
                 mem.value='';
                 res.style.visibility="hidden";
