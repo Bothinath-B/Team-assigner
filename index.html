@@ -17,14 +17,27 @@
             <input type="number" id="mpt" class="input-field">
             <button type="button" class="assign-btn" id="btn">Assign Teams</button>
         </div>
-        <div class="output-container">
+
+        <div class="output-container" id="outputContainer" style="display: none;">
             <h2 class="result-title">Result:&nbsp;</h2>
             <button type="button" style="visibility: hidden;" class="reset-btn" id="resetButton">Reset</button>
-            <button type="button" style="visibility: hidden;" class="download-btn" id="downloadButton">Download CSV</button>
+            <button type="button" style="visibility: hidden;" class="download-btn" id="downloadButton">Download</button>
+            <select class="download-select" id="downloadSelect" class="download-btn" style="visibility: hidden;">
+                <option value="" class="option" disabled selected>Select Format</option>
+                <option value="csv" class="option">CSV</option>
+                <option value="pdf" class="option">PDF</option>
+            </select>
             <div class="team-output" id="output">
             </div>
         </div>
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.0/jspdf.plugin.autotable.min.js"></script>
+    <script src="/assets/registerEduFont.js"></script>
+    <script src="/assets/registerCaveat.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
