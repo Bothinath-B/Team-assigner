@@ -106,6 +106,7 @@ download.onclick = function () {
         document.body.removeChild(link);
     }
     if (selectedOption === "pdf") {
+        console.log("Generating PDF...");
         const { jsPDF } = window.jspdf;
         //registerEduFont(jsPDF);
         registerCaveatFont(jsPDF);
