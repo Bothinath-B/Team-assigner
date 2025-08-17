@@ -83,6 +83,7 @@ let temp=[];
             let total=document.getElementById('total').value;
             let mem=document.getElementById('mpt').value;
             resetButton.addEventListener('click', () => {
+                console.log("Reset button clicked");
                 document.getElementById('output').innerHTML = '';
                     let t=document.getElementById('total').value=null;
                 let m=document.getElementById('mpt').value=null;
